@@ -1,0 +1,493 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>NaïveCalendar &mdash; NaïveCalendar  documentation</title>
+  
+
+  
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+
+  
+  
+  
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+        <script src="_static/jquery.js"></script>
+        <script src="_static/underscore.js"></script>
+        <script src="_static/doctools.js"></script>
+        <script src="_static/language_data.js"></script>
+    
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+
+    
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="#" class="icon icon-home" alt="Documentation Home"> NaïveCalendar
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <!-- Local TOC -->
+              <div class="local-toc"><ul>
+<li><a class="reference internal" href="#">NaïveCalendar</a><ul>
+<li><a class="reference internal" href="#dependances">Dépendances</a></li>
+<li><a class="reference internal" href="#usage">Usage</a></li>
+<li><a class="reference internal" href="#documentation">Documentation</a><ul>
+<li><a class="reference internal" href="#build-the-doc">Build the doc</a></li>
+<li><a class="reference internal" href="#module-naivecalendar">Fonctions</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+            
+          
+        </div>
+        
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="#">NaïveCalendar</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="#" class="icon icon-home"></a> &raquo;</li>
+        
+      <li>NaïveCalendar</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="_sources/index.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="naivecalendar">
+<h1>NaïveCalendar<a class="headerlink" href="#naivecalendar" title="Permalink to this headline">¶</a></h1>
+<p>Un popup calendrier avec rofi et python3 :</p>
+<ul class="simple">
+<li><p>Parcourez le calendrier de mois en mois</p></li>
+<li><p>Créez et éditez des notes liés à chaque date du calendrier. <em>Une date possédant une note apparait colorée</em></p></li>
+</ul>
+<a class="reference internal image-reference" href="https://framagit.org/Daguhh/naivecalendar/-/raw/master/naivecalendar_screenshot.png"><img alt="https://framagit.org/Daguhh/naivecalendar/-/raw/master/naivecalendar_screenshot.png" class="align-center" src="https://framagit.org/Daguhh/naivecalendar/-/raw/master/naivecalendar_screenshot.png" style="width: 200px;" /></a>
+<div class="section" id="dependances">
+<h2>Dépendances<a class="headerlink" href="#dependances" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p>python3</p></li>
+<li><p>rofi</p></li>
+</ul>
+</div>
+<div class="section" id="usage">
+<h2>Usage<a class="headerlink" href="#usage" title="Permalink to this headline">¶</a></h2>
+<p>Lancer le programme:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">chmod</span> <span class="o">+</span><span class="n">x</span> <span class="n">naivecalendar</span><span class="o">.</span><span class="n">py</span>
+<span class="o">./</span><span class="n">naivecalendar</span><span class="o">.</span><span class="n">py</span>
+</pre></div>
+</div>
+<p>Pour le détail des commandes, dans le prompt rofi, tapez:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">help</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="documentation">
+<h2>Documentation<a class="headerlink" href="#documentation" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="build-the-doc">
+<h3>Build the doc<a class="headerlink" href="#build-the-doc" title="Permalink to this headline">¶</a></h3>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">cd</span> <span class="n">docs</span><span class="o">/</span>
+<span class="n">python3</span> <span class="o">-</span><span class="n">m</span> <span class="n">pip</span> <span class="n">install</span> <span class="o">-</span><span class="n">r</span> <span class="n">requirements</span><span class="o">.</span><span class="n">txt</span>
+<span class="n">make</span> <span class="n">html</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="module-naivecalendar">
+<span id="fonctions"></span><h3>Fonctions<a class="headerlink" href="#module-naivecalendar" title="Permalink to this headline">¶</a></h3>
+<p>A simple calendar made with rofi and python3.</p>
+<p>Cycle through month and create linked note to days.</p>
+<p>rofi theme by adi1090x : <a class="reference external" href="https://github.com/adi1090x/polybar-themes">https://github.com/adi1090x/polybar-themes</a></p>
+<dl class="py function">
+<dt id="naivecalendar.add_months">
+<code class="sig-prename descclassname">naivecalendar.</code><code class="sig-name descname">add_months</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">sourcedate</span></em>, <em class="sig-param"><span class="n">months</span></em><span class="sig-paren">)</span><a class="headerlink" href="#naivecalendar.add_months" title="Permalink to this definition">¶</a></dt>
+<dd><p>Increment or decrement date by a number of month</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>sourcedate</strong> (<em>datetime.date</em>) – Date to Increment</p></li>
+<li><p><strong>months</strong> (<em>int</em>) – number of month to add</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>Incremented date</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>datetime.date</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt id="naivecalendar.cal2rofi_ind">
+<code class="sig-prename descclassname">naivecalendar.</code><code class="sig-name descname">cal2rofi_ind</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">day</span></em>, <em class="sig-param"><span class="n">month</span></em>, <em class="sig-param"><span class="n">year</span></em><span class="sig-paren">)</span><a class="headerlink" href="#naivecalendar.cal2rofi_ind" title="Permalink to this definition">¶</a></dt>
+<dd><p>Convert calendar date into coordinates for rofi</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>day</strong> (<em>int</em>) – A day number (1-31)</p></li>
+<li><p><strong>month</strong> (<em>int</em>) – A month number (1-12)</p></li>
+<li><p><strong>year</strong> (<em>int</em>) – A year number</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>A rofi index</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>int</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt id="naivecalendar.display_help">
+<code class="sig-prename descclassname">naivecalendar.</code><code class="sig-name descname">display_help</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#naivecalendar.display_help" title="Permalink to this definition">¶</a></dt>
+<dd><p>Show a rofi popup with help message</p>
+</dd></dl>
+
+<dl class="py function">
+<dt id="naivecalendar.gen_rofi_conf">
+<code class="sig-prename descclassname">naivecalendar.</code><code class="sig-name descname">gen_rofi_conf</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">text</span></em>, <em class="sig-param"><span class="n">urgent</span></em>, <em class="sig-param"><span class="n">day_ind</span></em><span class="sig-paren">)</span><a class="headerlink" href="#naivecalendar.gen_rofi_conf" title="Permalink to this definition">¶</a></dt>
+<dd><p>Create a rofi command
+theme by adi1090x : <a class="reference external" href="https://github.com/adi1090x/polybar-themes">https://github.com/adi1090x/polybar-themes</a></p>
+</dd></dl>
+
+<dl class="py function">
+<dt id="naivecalendar.get_calendar_from_date">
+<code class="sig-prename descclassname">naivecalendar.</code><code class="sig-name descname">get_calendar_from_date</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">date</span></em><span class="sig-paren">)</span><a class="headerlink" href="#naivecalendar.get_calendar_from_date" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return a montly calendar given date</p>
+<p>Calendar is a string formated to be shown by rofi (i.e. column bu column):</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>           <span class="n">L</span>  <span class="n">M</span>  <span class="n">M</span>  <span class="n">J</span>  <span class="n">V</span>  <span class="n">S</span>  <span class="n">D</span>
+                             <span class="mi">1</span>
+           <span class="mi">2</span>  <span class="mi">3</span>  <span class="mi">4</span>  <span class="mi">5</span>  <span class="mi">6</span>  <span class="mi">7</span>  <span class="mi">8</span>
+<span class="n">date</span>  <span class="o">-&gt;</span>   <span class="mi">9</span> <span class="mi">10</span> <span class="mi">11</span> <span class="mi">12</span> <span class="mi">13</span> <span class="mi">14</span> <span class="mi">15</span>   <span class="o">-&gt;</span>   <span class="s1">&#39;L</span><span class="se">\n</span><span class="s1"> </span><span class="se">\n</span><span class="s1">2</span><span class="se">\n</span><span class="s1">9</span><span class="se">\n</span><span class="s1">16</span><span class="se">\n</span><span class="s1">23</span><span class="se">\n</span><span class="s1">30</span><span class="se">\n</span><span class="s1">&lt;</span><span class="se">\n</span><span class="s1">M</span><span class="se">\n</span><span class="s1"> </span><span class="se">\n</span><span class="s1">3</span><span class="se">\n</span><span class="s1">10</span><span class="se">\n</span><span class="s1">17</span><span class="se">\n</span><span class="s1">24</span><span class="se">\n</span><span class="s1">...&#39;</span>
+          <span class="mi">16</span> <span class="mi">17</span> <span class="mi">18</span> <span class="mi">19</span> <span class="mi">20</span> <span class="mi">21</span> <span class="mi">22</span>
+          <span class="mi">23</span> <span class="mi">24</span> <span class="mi">25</span> <span class="mi">26</span> <span class="mi">27</span> <span class="mi">28</span> <span class="mi">29</span>
+          <span class="mi">30</span>
+</pre></div>
+</div>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>date</strong> (<em>datetime.date</em>) – Any day of the month to display</p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>A str that contain chained columns of a calendar in a rofi format</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>str</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt id="naivecalendar.get_month_notes">
+<code class="sig-prename descclassname">naivecalendar.</code><code class="sig-name descname">get_month_notes</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">date</span></em><span class="sig-paren">)</span><a class="headerlink" href="#naivecalendar.get_month_notes" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return notes files paths that are attached to date’s month</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>date</strong> (<em>datetime.date</em>) – Any day of the month displayed</p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>list of files that belong to date.month</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>list</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt id="naivecalendar.get_month_notes_heads">
+<code class="sig-prename descclassname">naivecalendar.</code><code class="sig-name descname">get_month_notes_heads</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">date</span></em><span class="sig-paren">)</span><a class="headerlink" href="#naivecalendar.get_month_notes_heads" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return a list of file’s first line of a specific month</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>date</strong> (<em>datetime.date</em>) – Any day of the month to display</p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>A rofi formatted list of month’s notes first line</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>str</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt id="naivecalendar.get_month_notes_ind">
+<code class="sig-prename descclassname">naivecalendar.</code><code class="sig-name descname">get_month_notes_ind</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">date</span></em><span class="sig-paren">)</span><a class="headerlink" href="#naivecalendar.get_month_notes_ind" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return rofi-formatted index of days with attached note</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>date</strong> (<em>datetime.date</em>) – Any day of the month displayed</p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>Column index list formatted for rofi</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>str</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt id="naivecalendar.get_note_head">
+<code class="sig-prename descclassname">naivecalendar.</code><code class="sig-name descname">get_note_head</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">note_path</span></em><span class="sig-paren">)</span><a class="headerlink" href="#naivecalendar.get_note_head" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return first line of a text file</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>note_path</strong> (<em>str</em>) – A text file path</p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>First line of the text file</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>str</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt id="naivecalendar.intercept_rofi_kill">
+<code class="sig-prename descclassname">naivecalendar.</code><code class="sig-name descname">intercept_rofi_kill</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">func</span></em><span class="sig-paren">)</span><a class="headerlink" href="#naivecalendar.intercept_rofi_kill" title="Permalink to this definition">¶</a></dt>
+<dd><p>A decorator to capture sdtout after rofi being killed</p>
+</dd></dl>
+
+<dl class="py function">
+<dt id="naivecalendar.main">
+<code class="sig-prename descclassname">naivecalendar.</code><code class="sig-name descname">main</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#naivecalendar.main" title="Permalink to this definition">¶</a></dt>
+<dd><p>Display a calendar with rofi
+Calendar is interactive :</p>
+<ul class="simple">
+<li><p>switch between month</p></li>
+<li><p>open {EDITOR} and create a note for selected day</p></li>
+</ul>
+</dd></dl>
+
+<dl class="py function">
+<dt id="naivecalendar.rofi2cal_ind">
+<code class="sig-prename descclassname">naivecalendar.</code><code class="sig-name descname">rofi2cal_ind</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">ind</span></em><span class="sig-paren">)</span><a class="headerlink" href="#naivecalendar.rofi2cal_ind" title="Permalink to this definition">¶</a></dt>
+<dd><p>Convert coordinate from rofi to day number</p>
+</dd></dl>
+
+<dl class="py function">
+<dt id="naivecalendar.show_rofi">
+<code class="sig-prename descclassname">naivecalendar.</code><code class="sig-name descname">show_rofi</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">txt_body</span></em>, <em class="sig-param"><span class="n">txt_head</span></em><span class="sig-paren">)</span><a class="headerlink" href="#naivecalendar.show_rofi" title="Permalink to this definition">¶</a></dt>
+<dd><p>Launch a rofi window</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>txt_body</strong> (<em>str</em>) – Text to display in rofi window</p></li>
+<li><p><strong>txt_head</strong> (<em>str</em>) – Text to display in rofi prompt</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>Rofi selected cell content</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>str</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt id="naivecalendar.show_rofi_calendar">
+<code class="sig-prename descclassname">naivecalendar.</code><code class="sig-name descname">show_rofi_calendar</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">rofi</span></em>, <em class="sig-param"><span class="n">cal</span></em><span class="sig-paren">)</span><a class="headerlink" href="#naivecalendar.show_rofi_calendar" title="Permalink to this definition">¶</a></dt>
+<dd><p>Launch a rofi window</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>rofi</strong> (<em>str</em>) – Rofi command to be run in a shell</p></li>
+<li><p><strong>cal</strong> (<em>str</em>) – A column by column calendar list formatted for rofi</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>Rofi selected cell content</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>str</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt id="naivecalendar.weekly_transpose">
+<code class="sig-prename descclassname">naivecalendar.</code><code class="sig-name descname">weekly_transpose</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">cal</span></em>, <em class="sig-param"><span class="n">w</span><span class="o">=</span><span class="default_value">7</span></em><span class="sig-paren">)</span><a class="headerlink" href="#naivecalendar.weekly_transpose" title="Permalink to this definition">¶</a></dt>
+<dd><p>Transpose (math) a line by line list into column by column list,
+given column number</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>cal</strong> (<em>list</em>) – line by line elements of a calendar</p></li>
+<li><p><strong>w</strong> (<em>int</em>) – number of column in the calendar (usually 7)</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>A list that represent column by column elements of a calendar</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>list</p>
+</dd>
+</dl>
+<p class="rubric">Examples</p>
+<p>With an hypothetic 3 day week</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">my_list</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span><span class="mi">4</span><span class="p">,</span><span class="mi">5</span><span class="p">,</span><span class="mi">6</span><span class="p">]</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">weekly_transpose</span><span class="p">(</span><span class="n">my_list</span><span class="p">,</span> <span class="n">w</span><span class="o">=</span><span class="mi">3</span><span class="p">)</span>
+<span class="go">[1,4,2,5,3,6]</span>
+</pre></div>
+</div>
+</dd></dl>
+
+</div>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        
+        &copy; Copyright Daguhh, code.daguhh@zaclys.net
+
+    </p>
+  </div>
+    
+    
+    
+    Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a
+    
+    <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a>
+    
+    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>
