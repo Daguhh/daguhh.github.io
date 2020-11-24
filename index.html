@@ -83,7 +83,7 @@
               <!-- Local TOC -->
               <div class="local-toc"><ul>
 <li><a class="reference internal" href="#">NaïveCalendar</a><ul>
-<li><a class="reference internal" href="#dependances">Dépendances</a></li>
+<li><a class="reference internal" href="#dependancies">Dependancies</a></li>
 <li><a class="reference internal" href="#usage">Usage</a></li>
 <li><a class="reference internal" href="#documentation">Documentation</a><ul>
 <li><a class="reference internal" href="#build-the-doc">Build the doc</a></li>
@@ -166,15 +166,15 @@
 <p><a class="reference external" href="https://dictionnaire.lerobert.com/definition/naif">LeRobert</a></p>
 </div></blockquote>
 <a class="reference external image-reference" href="https://framagit.org/Daguhh/naivecalendar"><img alt="https://img.shields.io/badge/Source-git-success" src="https://img.shields.io/badge/Source-git-success" /></a>
-<a class="reference external image-reference" href="https://framagit.org/Daguhh/naivecalendar/-/raw/master/naivecalendar.py?inline=false"><img alt="https://img.shields.io/badge/Download-script-yellow" src="https://img.shields.io/badge/Download-script-yellow" /></a>
-<p>Un popup calendrier avec <a class="reference external" href="https://github.com/davatorium/rofi">rofi</a> et <a class="reference external" href="https://www.python.org/">python3</a> :</p>
+<a class="reference external image-reference" href="https://framagit.org/Daguhh/naivecalendar/-/raw/master/naivecalendar/naivecalendar.py?inline=false"><img alt="https://img.shields.io/badge/Download-script-yellow" src="https://img.shields.io/badge/Download-script-yellow" /></a>
+<p>A popup calendar with <a class="reference external" href="https://github.com/davatorium/rofi">rofi</a> and <a class="reference external" href="https://www.python.org/">python3</a>:</p>
 <ul class="simple">
-<li><p>Parcourez le calendrier de mois en mois</p></li>
-<li><p>Créez et éditez des notes liés à chaque date du calendrier. <em>Une date possédant une note apparait colorée</em></p></li>
+<li><p>Cycle through calendar month by month</p></li>
+<li><p>Create notes linked to days. <em>Days with notes will appear colored</em></p></li>
 </ul>
 <a class="reference internal image-reference" href="https://framagit.org/Daguhh/naivecalendar/-/raw/master/naivecalendar_screenshot.png"><img alt="https://framagit.org/Daguhh/naivecalendar/-/raw/master/naivecalendar_screenshot.png" class="align-center" src="https://framagit.org/Daguhh/naivecalendar/-/raw/master/naivecalendar_screenshot.png" style="width: 200px;" /></a>
-<div class="section" id="dependances">
-<h2>Dépendances<a class="headerlink" href="#dependances" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="dependancies">
+<h2>Dependancies<a class="headerlink" href="#dependancies" title="Permalink to this headline">¶</a></h2>
 <ul class="simple">
 <li><p><a class="reference external" href="https://www.python.org/">python3</a></p></li>
 <li><p><a class="reference external" href="https://github.com/davatorium/rofi">rofi</a></p></li>
@@ -182,12 +182,12 @@
 </div>
 <div class="section" id="usage">
 <h2>Usage<a class="headerlink" href="#usage" title="Permalink to this headline">¶</a></h2>
-<p>Lancer le programme:</p>
+<p>Run:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">chmod</span> <span class="o">+</span><span class="n">x</span> <span class="n">naivecalendar</span><span class="o">.</span><span class="n">py</span>
 <span class="o">./</span><span class="n">naivecalendar</span><span class="o">.</span><span class="n">py</span>
 </pre></div>
 </div>
-<p>Pour le détail des commandes, dans le prompt rofi, tapez:</p>
+<p>For more detail about commands, run the script, then, in the command prompt, type:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">help</span>
 </pre></div>
 </div>
@@ -250,7 +250,7 @@
 
 <dl class="py function">
 <dt id="naivecalendar.display_help">
-<code class="sig-prename descclassname">naivecalendar.</code><code class="sig-name descname">display_help</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#naivecalendar.display_help" title="Permalink to this definition">¶</a></dt>
+<code class="sig-prename descclassname">naivecalendar.</code><code class="sig-name descname">display_help</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">head_txt</span><span class="o">=</span><span class="default_value">'help:'</span></em><span class="sig-paren">)</span><a class="headerlink" href="#naivecalendar.display_help" title="Permalink to this definition">¶</a></dt>
 <dd><p>Show a rofi popup with help message</p>
 </dd></dl>
 
@@ -259,6 +259,12 @@
 <code class="sig-prename descclassname">naivecalendar.</code><code class="sig-name descname">gen_rofi_conf</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">text</span></em>, <em class="sig-param"><span class="n">urgent</span></em>, <em class="sig-param"><span class="n">day_ind</span></em><span class="sig-paren">)</span><a class="headerlink" href="#naivecalendar.gen_rofi_conf" title="Permalink to this definition">¶</a></dt>
 <dd><p>Create a rofi command
 theme by adi1090x : <a class="reference external" href="https://github.com/adi1090x/polybar-themes">https://github.com/adi1090x/polybar-themes</a></p>
+</dd></dl>
+
+<dl class="py function">
+<dt id="naivecalendar.get_arguments">
+<code class="sig-prename descclassname">naivecalendar.</code><code class="sig-name descname">get_arguments</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#naivecalendar.get_arguments" title="Permalink to this definition">¶</a></dt>
+<dd><p>Parse command line arguments</p>
 </dd></dl>
 
 <dl class="py function">
@@ -357,8 +363,8 @@ theme by adi1090x : <a class="reference external" href="https://github.com/adi10
 </dd></dl>
 
 <dl class="py function">
-<dt id="naivecalendar.intercept_rofi_kill">
-<code class="sig-prename descclassname">naivecalendar.</code><code class="sig-name descname">intercept_rofi_kill</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">func</span></em><span class="sig-paren">)</span><a class="headerlink" href="#naivecalendar.intercept_rofi_kill" title="Permalink to this definition">¶</a></dt>
+<dt id="naivecalendar.intercept_rofi_error">
+<code class="sig-prename descclassname">naivecalendar.</code><code class="sig-name descname">intercept_rofi_error</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">func</span></em><span class="sig-paren">)</span><a class="headerlink" href="#naivecalendar.intercept_rofi_error" title="Permalink to this definition">¶</a></dt>
 <dd><p>A decorator to capture sdtout after rofi being killed</p>
 </dd></dl>
 
